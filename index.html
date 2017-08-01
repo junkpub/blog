@@ -1,0 +1,61 @@
+---
+layout: default
+_shownpages: 10
+---
+
+<div class="home">
+    <ul class="post-list">
+        {% for post in paginator.posts %}
+        <li>
+            <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+            <span class="post-meta">
+                {{ post.date | date: "%b %-d, %Y" }}&nbsp;&nbsp;
+                {% include post-tags.html %}
+            </span>
+        </li>
+        {% endfor %}
+    </ul>
+
+    {% assign begin = paginator.page | minus: 1 | divided_by: page._shownpages | times: page._shownpages | plus: 1 %}
+    {% assign tmpend = begin | plus: page._shownpages %}
+    {% if paginator.total_pages < tmpend %}
+    {% assign end = paginator.total_pages %}
+    {% else %}
+    {% assign end = tmpend | minus: 1 %}
+    {% endif %}
+
+    <div class="pagination">
+        {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+            <a href="/">&laquo;</a>
+            {% else %}
+            <a href="/page{{ paginator.previous_page }}">&laquo;</a>
+            {% endif %}
+        {% else %}
+        <a>&laquo;</a>
+        {% endif %}
+
+        {% for page in (begin..end) %}
+            {% if page == paginator.page %}
+            <a class="active">{{ page }}</a>
+            {% else %}
+                {% if page == 1 %}
+                <a href="/">{{ page }}</a>
+                {% else %}
+                <a href="/page{{ page }}">{{ page }}</a>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+        <a href="/page{{ paginator.next_page }}">&raquo;</a>
+        {% else %}
+        <a>&raquo;</a>
+        {% endif %}
+    </div>
+
+    <div>
+        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </div>
+
+</div>
