@@ -58,5 +58,5 @@ $on-laptop:        800px;
 // Font
 @font-face {
     font-family: "나눔고딕";
-    src: url( '{{ site.url }}/fonts/NanumGothic.ttf') format( 'truetype');
+    src: url( '{{ site.baseurl }}/fonts/NanumGothic.ttf') format( 'truetype');
 }
