@@ -77,14 +77,14 @@ gihub-pages를 설치했다고 해서 바로 볼 수 있는것은 아니다. jek
 
 `jekyll serve`
 
-![jekyll 구동 화면]({{ site.url }}/imgs/20170520-jekyll_serve.png)
+![jekyll 구동 화면]({{ site.baseurl }}/imgs/20170520-jekyll_serve.png)
 
 몇 가지 warning 메세지가 발생하는데 이에 대한 해결방법은 다음에 확인해보자.
 브라우저를 열고 `127.0.0.1:4000`로 접근해보자. Root의 폴더구조를 볼 수 있다.
-![기본 페이지]({{ site.url }}/imgs/20170520-default-github-pages.png)
+![기본 페이지]({{ site.baseurl }}/imgs/20170520-default-github-pages.png)
 
 아무런 내용 없이 폴더구조가 뜨는 이유는 아직 `index.html`이 없기 때문이다. `Ctrl-C`로 jekyll을 종료 후에 임시로 아무 `index.html`를 생성해서 `jekyll serve`수행 한 후에 다시 접근해보면 정상적으로 페이지가 뜨는 것을 확인해볼 수 있다.
-![index 추가한 임시 페이지]({{ site.url }}/imgs/20170520-index-github-pages.png)
+![index 추가한 임시 페이지]({{ site.baseurl }}/imgs/20170520-index-github-pages.png)
 
 Jekyll을 구동할 때에 여러가지 옵션들을 사용할 수 있다. 이 내용은 다음에 적기로 하고 참고를 위해 링크를 남겨둔다. [Jekyll 기본 사용법](https://jekyllrb.com/docs/usage/)
 
