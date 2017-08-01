@@ -10,7 +10,7 @@ title: JunkPub
 email: junkpub.master@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   시원한 맥주 한 잔 하며 잡동사니들을 주섬주섬 긁어모은 알콜 블로그.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://junkpub.github.io/junkpub.blog/" # the base hostname & protocol for your site
 twitter_username:
 github_username:  JunkPub
