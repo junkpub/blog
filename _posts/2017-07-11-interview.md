@@ -4,7 +4,7 @@ title:  "Interview"
 date:   2017-07-12 00:00:32 +0900
 categories: Interview
 tags:
-hidden: false
+hidden: true
 ---
 ## 자료구조
 #### map vs unoredered_map
@@ -229,9 +229,3 @@ OSI 7계층이 너무 세분화 되어 있어 이를 4계층으로 단순화
 * 런타임에 자신의 클래스에 맞는 함수를 찾아서 호출하기 위해 존재하는 것이 가상함수 테이블(vftbl)
 * virtual을 갖고 있는 클래스는 컴파일 시에 자동으로 vftbl(array)을 생성하여 실제로 실행할 함수의 주소값을 저장
 * 떄문에 virtual을 갖고 있는 클래스는 항상 4byte가 기본으로 추가. vftbl 포인터.
-
-
-#### X3::BehaviorTree
-* *.xml파일에서 하나씩 노드를 생성
-* _DECLARE_BT_STATE : 현재 AI객체의 상태를 가져오기 위한
-* _DECLARE_BT_NODE : 현재 AI객체가 사용하고 있는 AI_Node의 값
