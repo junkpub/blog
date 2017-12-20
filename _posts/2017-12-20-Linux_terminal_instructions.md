@@ -2,7 +2,7 @@
 layout: post
 title:  "Linux 터미널 명령어 정리"
 date:   2017-12-20 00:00:32 +0900
-categories: Interview
+categories: blog
 tags:
 hidden: false
 ---
