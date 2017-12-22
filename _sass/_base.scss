@@ -129,16 +129,15 @@ blockquote {
  */
 pre,
 code {
-    
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 50px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 12px;
+    /*border: 1px solid $grey-color-light;*/
+    border-radius: 5px;
     
     background-color: #eef;
 }
 
 code {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     padding: 1px 5px;
     margin: 3px 0px 0px 0px;
 }
