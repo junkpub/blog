@@ -130,20 +130,23 @@ blockquote {
 pre,
 code {
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 12px;
+    font-size: 14px;
     /*border: 1px solid $grey-color-light;*/
     border-radius: 5px;
     
     background-color: #eef;
-}
 
+    padding: 1px 5px;
+    margin: 3px 0px 0px 0px;
+}
+/*
 code {
     padding: 1px 5px;
     margin: 3px 0px 0px 0px;
 }
 
 pre {
-    /*padding: 8px 12px;*/
+    padding: 8px 12px;
     margin: 3px 0px 0px 0px;
     overflow-x: auto;
 
@@ -153,7 +156,7 @@ pre {
         padding-left: 0;
     }
 }
-
+*/
 
 
 /**
