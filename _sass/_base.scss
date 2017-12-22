@@ -139,7 +139,7 @@ code {
 
 code {
     padding: 1px 5px;
-    margin: 3px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
 }
 
 pre {
@@ -147,11 +147,13 @@ pre {
     margin: 3px 0px 0px 0px;
     overflow-x: auto;
 
+    /*
     > code {
         border: 0;
         padding-right: 0;
         padding-left: 0;
     }
+    */
 }
 
 
