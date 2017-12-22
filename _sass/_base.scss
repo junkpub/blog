@@ -138,8 +138,8 @@ code {
 }
 
 code {
-    /*font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;*/
-    padding: 1px 5px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    padding: 100px 5px;
     margin: 3px 0px 0px 0px;
 }
 
@@ -151,7 +151,7 @@ pre {
     > code {
         border: 0;
         padding-right: 0;
-        padding-left: 50;
+        padding-left: 0;
     }
 }
 
